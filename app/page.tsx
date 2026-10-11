@@ -111,8 +111,8 @@ const team = [
 ];
 
 function imageUrl(id: string, width = 1000) {
-  if (id === "https://res") {
-    return "https://res.cloudinary.com/dvmnbsdec/image/upload/v1791739525/IMG-20261011-WA0021.jpg";
+  if (id == "https://res") {
+    return id;
   }
 
   return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
