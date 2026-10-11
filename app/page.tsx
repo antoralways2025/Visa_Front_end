@@ -105,12 +105,16 @@ const services = [
 ];
 
 const team = [
-  { name: "Nahid Alam", role: "Founder & Lead Consultant", initials: "NA", image: "photo-1500648767791-00dcc994a43e" },
-  { name: "Samia Rahman", role: "Student Counsellor", initials: "SR", image: "photo-1551836022-d5d88e9218df" },
-  { name: "Tanvir Hasan", role: "Application Advisor", initials: "TH", image: "photo-1506794778202-cad84cf45f1d" }
+  { name: "Himu", role: "Founder & Lead Consultant", initials: "NA", image: "photo-1500648767791-00dcc994a43e" },
+  { name: "Sheikh Nehal", role: "Student Counsellor", initials: "SR", image: "https://res.cloudinary.com/dvmnbsdec/image/upload/v1791739525/IMG-20261011-WA0021.jpg" },
+  { name: "Lina Rahman", role: "Application Advisor", initials: "TH", image: "photo-1506794778202-cad84cf45f1d" }
 ];
 
 function imageUrl(id: string, width = 1000) {
+  if (id === "https://res") {
+    return "https://res.cloudinary.com/dvmnbsdec/image/upload/v1791739525/IMG-20261011-WA0021.jpg";
+  }
+
   return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
 }
 
